@@ -1,0 +1,15 @@
+.container {
+}
+
+.grid {
+    margin: 0 auto;
+}
+
+.grid-item {
+    width: 335px;
+    margin-bottom: 2px;
+}
+
+.grid-item img {
+    width: 100%;
+}

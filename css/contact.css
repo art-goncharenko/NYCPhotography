@@ -1,0 +1,82 @@
+h1 {
+    font-size: 20px;
+    color: burlywood;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info a {
+    text-decoration: none;
+    font-weight: bold;
+    color: burlywood;
+}
+
+.form {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.form-item {
+    margin: 0 0 20px 20px;
+}
+
+.form-label {
+    font-size: 18px;
+    display: block;
+    margin: 0 0 10px 0;
+}
+
+.form-input {
+    height: 25px;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px solid burlywood;
+    width: 100%;
+    font-size: 16px;
+    transition: all 0.5s ease 0s;
+}
+
+.form-input:focus {
+    box-shadow: 0 0 15px burlywood;
+}
+.form-input._error {
+    box-shadow: 0 0 15px red;
+}
+
+textarea.form-input {
+    min-height: 120px;
+    resize: vertical;
+    padding: 20px;
+}
+
+.form-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    background-color: burlywood;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 3px 0 #917758;
+    transition: background-color 0.5s ease 0s;
+    position: relative;
+    top: 0;
+}
+
+.form-button:hover {
+    background-color: #d5a155;
+}
+
+.form-button:active {
+    top: 3px;
+    box-shadow: 0 2px 0 #917758;
+}
