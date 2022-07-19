@@ -1,0 +1,75 @@
+h1 {
+    text-align: center;
+    color: burlywood;
+    font-weight: 500;
+}
+
+.spacer {
+    font-size: 0;
+    height: 10px;
+    line-height: 0;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrapper .container .content .row1 .photo img {
+    width: 325px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+}
+
+.wrapper .container .content .row1 .photo {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+.wrapper .container .content .row1 .photo .photo-cover {
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    top: 0;
+    bottom: 0;
+}
+
+.wrapper .container .content .row1 .photo a {
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    font-size: 26px;
+    color: white;
+}
+
+.wrapper .container .content .row1 .photo .photo-cover:hover {
+    opacity: 0;
+}
