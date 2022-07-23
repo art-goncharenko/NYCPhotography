@@ -8,11 +8,12 @@ window.onload = () => {
         fitWidth: true
     });
 }
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-toggleButton.addEventListener('click', () =>
-    navbarLinks.classList.toggle('active'))
+// const toggle = document.getElementsByClassName('toggle-button')[0]
+// const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+// console.log('toggle', toggle)
+// toggle.addEventListener('click', () =>
+//     navbarLinks.classList.toggle('active'))
 
 // const $grid = $('.grid').masonry({
 //     itemSelector: '.grid-item',
