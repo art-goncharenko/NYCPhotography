@@ -24,7 +24,7 @@ h1 {
 .wrapper .container .content .row1 {
     display: flex;
     width: 100%;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  /*this property helped with adaptive layout*/
     justify-content: space-around;
 }
 .wrapper .container .content .row1 .photo {
@@ -45,6 +45,9 @@ h1 {
     font-size: 32px;
     color: white;
     cursor: pointer;
+    z-index: 1;
+    padding: 1em;
+    margin: -1em;
 }
 
 .wrapper .container .content .row1 .photo.img-personal {
