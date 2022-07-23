@@ -20,54 +20,71 @@ h1 {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
 }
-
-.wrapper .container .content .row1 .photo img {
-    width: 325px;
+.wrapper .container .content .row1 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-
-@media (max-width: 1200px) {
-    .container {
-        max-width: 970px;
-    }
-}
-
-@media (max-width: 992px) {
-    .container {
-        max-width: 750px;
-    }
-}
-
-@media (max-width: 767px) {
-    .container {
-        max-width: none;
-    }
-}
-
 .wrapper .container .content .row1 .photo {
-    display: inline-block;
-    margin-right: 10px;
+    width: 325px;
+    height: 487px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 10px;
     margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     position: relative;
 }
+.wrapper .container .content .row1 .photo a {
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+}
+
+.wrapper .container .content .row1 .photo.img-personal {
+    background-image: url("../img/personal.JPG");
+}
+
+.wrapper .container .content .row1 .photo.img-love-story {
+    background-image: url("../img/love_story.JPG");
+}
+
+.wrapper .container .content .row1 .photo.img-family {
+    background-image: url("../img/family.JPG");
+}
+
+/*@media (max-width: 1200px) {*/
+/*    .container {*/
+/*        max-width: 970px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 992px) {*/
+/*    .container {*/
+/*        max-width: 750px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 767px) {*/
+/*    .container {*/
+/*        max-width: none;*/
+/*    }*/
+/*}*/
+
 .wrapper .container .content .row1 .photo .photo-cover {
     background-color: black;
     opacity: 0.5;
     position: absolute;
     width: 100%;
-    height: 99%;
+    height: 100%;
     top: 0;
     bottom: 0;
-}
-
-.wrapper .container .content .row1 .photo a {
-    display: block;
-    position: absolute;
-    top: 45%;
-    left: 35%;
-    font-size: 26px;
-    color: white;
 }
 
 .wrapper .container .content .row1 .photo .photo-cover:hover {
