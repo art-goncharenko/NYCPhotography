@@ -1,21 +1,36 @@
-.spacer {
-    font-size: 0;
-    height: 10px;
-    line-height: 0;
-}
-
 .container {
+    margin-top: 10px;
 }
 
 .grid {
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 0 10px;
+    gap: 5px;
 }
 
 .grid-item {
-    width: 335px;
-    margin-bottom: 2px;
+    width: 577px;
 }
 
 .grid-item img {
     width: 100%;
 }
+
+@media all and (max-width: 600px) {
+    .grid-item {
+        width: 100%;
+    }
+}
+
+/*.grid-item.width2 {*/
+/*    width: 675px;*/
+/*}*/
+
+/*@media screen and (max-width: 675px) {*/
+/*    .grid-item.width2 {*/
+/*        width: 335px;*/
+/*    }*/
+/*}*/

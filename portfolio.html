@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-240953904-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-240953904-1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
@@ -22,34 +31,37 @@
     <div class="navbar-links">
         <ul>
             <li class="hover-underline"><a href="index.html">Home</a></li>
-            <li class="hover-underline"><a href="#">About</a></li>
-            <li class="hover-underline"><a href="portfolio.html">Portfolio</a></li>
+            <li class="hover-underline"><a href="portfolio.html">Portfolio
+                <i class="fa-solid fa-camera"></i></a></li>
             <li class="hover-underline"><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 </nav>
-<h1>Portfolio</h1>
-<div class="spacer"></div>
-<div class="wrapper">
-    <div class="container">
-        <div class="content">
-            <div class="row1">
-                <div class="photo img-personal">
-                    <a href="./index.html">Personal</a>
-                    <div class="photo-cover"></div>
-                </div>
-                <div class="photo img-love-story">
-                    <div class="photo-cover"></div>
-                    <a href="#">Love story</a>
-                </div>
-                <div class="photo img-family">
-                    <div class="photo-cover"></div>
-                    <a href="#">Family</a>
-                </div>
-            </div>
+<section>
+    <h1>Portfolio</h1>
+    <div class="content">
+        <div class="photo img-personal">
+            <a href="./personal.html">Personal</a>
+        </div>
+        <div class="photo img-love-story">
+            <div class="photo-cover"></div>
+            <a href="./lovestory.html">Love story</a>
+        </div>
+        <div class="photo img-family">
+            <div class="photo-cover"></div>
+            <a href="./family.html">Family</a>
+        </div>
+        <div class="photo img-events">
+            <div class="photo-cover"></div>
+            <a href="./events.html">Events</a>
+        </div>
+        <div class="photo img-wedding">
+            <div class="photo-cover"></div>
+            <a href="./wedding.html">Wedding</a>
         </div>
     </div>
-</div>
+</section>
+
 <a class="gotopbtn" href="#"><i class="fa-solid fa-arrow-up"></i> </a>
 <script src="js/toggleButton.js"></script>
 </body>

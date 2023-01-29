@@ -4,92 +4,80 @@ h1 {
     font-weight: 500;
 }
 
-.spacer {
-    font-size: 0;
-    height: 10px;
-    line-height: 0;
-}
-
-.wrapper {
-    display: flex;
-    min-height: 100%;
-    overflow: hidden;
-    flex-direction: column;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.wrapper .container .content .row1 {
+.content {
     display: flex;
     width: 100%;
-    flex-wrap: wrap;  /*this property helped with adaptive layout*/
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.wrapper .container .content .row1 .photo {
+.content .photo {
+    display: flex;
     width: 325px;
     height: 487px;
     background-size: cover;
-    display: flex;
     justify-content: center;
     align-items: center;
-    left: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 10px 10px 10px;
     position: relative;
+    filter: brightness(0.8);
+    background-color: black;
 }
-.wrapper .container .content .row1 .photo a {
+
+.content .photo:hover {
+    filter: unset;
+}
+.content .photo a {
+    padding: 1em;
+    font-size: 42px;
+    width: 100%;
+    text-align: center;
     text-decoration: none;
-    font-size: 32px;
     color: white;
     cursor: pointer;
-    z-index: 1;
-    padding: 1em;
-    margin: -1em;
 }
 
-.wrapper .container .content .row1 .photo.img-personal {
-    background-image: url("../img/personal.JPG");
+.content .photo.img-personal {
+    background-image: url("../img/fatima.jpg");
+    transition: 0.5s;
 }
 
-.wrapper .container .content .row1 .photo.img-love-story {
-    background-image: url("../img/love_story.JPG");
+.content .photo.img-love-story {
+    background-image: url("../img/love_story.jpg");
+    transition: 0.5s;
 }
 
-.wrapper .container .content .row1 .photo.img-family {
-    background-image: url("../img/family.JPG");
+.content .photo.img-family {
+    background-image: url("../img/family/img14.jpg");
+    transition: 0.5s;
+}
+.content .photo.img-events {
+    background-image: url("../img/events/2.jpg");
+    width: 730px;
+    height: 487px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+.content .photo.img-wedding {
+    background-image: url("../img/wedding/wedding.jpg");
+    transition: 0.5s;
 }
 
-/*@media (max-width: 1200px) {*/
-/*    .container {*/
-/*        max-width: 970px;*/
-/*    }*/
-/*}*/
+@media screen and (max-width: 675px) {
+    .content .photo.img-personal {
+        background-image: url("../img/personalSm.jpg");
+    }
 
-/*@media (max-width: 992px) {*/
-/*    .container {*/
-/*        max-width: 750px;*/
-/*    }*/
-/*}*/
-
-/*@media (max-width: 767px) {*/
-/*    .container {*/
-/*        max-width: none;*/
-/*    }*/
-/*}*/
-
-.wrapper .container .content .row1 .photo .photo-cover {
-    background-color: black;
-    opacity: 0.5;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    bottom: 0;
+    .content .photo.img-events {
+        background-image: url("../img/eventMobile.jpg");
+        width: 325px;
+    }
+    .content .photo {
+        filter: unset;
+    }
 }
-
-.wrapper .container .content .row1 .photo .photo-cover:hover {
-    opacity: 0;
+@media screen and (min-width: 1785px) {
+    .content .photo.img-wedding {
+        position: relative;
+        right: 30px;
+    }
 }

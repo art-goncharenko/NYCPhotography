@@ -1,12 +1,22 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-240953904-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-240953904-1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <script src="https://kit.fontawesome.com/a0254a8c58.js" crossorigin="anonymous"></script>
     <title>Contact</title>
 </head>
 <body>
@@ -20,44 +30,49 @@
     <div class="navbar-links">
         <ul>
             <li class="hover-underline"><a href="index.html">Home</a></li>
-            <li class="hover-underline"><a href="#">About</a></li>
-            <li class="hover-underline"><a href="portfolio.html">Portfolio</a> </li>
+            <li class="hover-underline"><a href="portfolio.html">Portfolio
+                <i class="fa-solid fa-camera"></i></a></li>
             <li class="hover-underline"><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 </nav>
-
-<div class="container">
+<section class="container">
+    <img src="./img/irina.jpg" alt="Author">
     <div class="contact-info">
         <h1>Get in Touch!</h1>
-        <div>Feel free to ask any question</div>
-        <div>Send me a message: <a
-                href="sms:+16318097898?&bodyHi.%20My%20name%20is%20___.%20I%27d%20like%20to%20schedule%20a%20photoshoot.%0AMy%20preferred%20date%20and%20time%20is%20____.">Click
-            to send
-            message</a></div>
-        <div>Email : <a href="mailto:gonchirinka@gmail.com">gonchirinka@gmail.com</a></div>
-
-        <div>Phone: <a href="tel:6318097898">(631)809-7898</a></div>
+        <div class="about">Hi! My name is Irina Goncharenko.<p> I am a photographer based in New-York City.</div>
+        <div>To book a photoshoot - send me a message. Feel free to ask any question</div>
+        <div class="contacts">
+            <div><i class="fa-solid fa-message"></i>Send me a message: <a
+                    href="sms:+16318097898?&bodyHi.%20My%20name%20is%20___.%20I%27d%20like%20to%20schedule%20a%20photoshoot.%0AMy%20preferred%20date%20and%20time%20is%20____.">Send
+                a message</a></div>
+            <div><i class="fa-regular fa-envelope"></i>Email : <a href="mailto:gonchirinka@gmail.com">gonchirinka@gmail.com</a>
+            </div>
+            <div><i class="fa-solid fa-phone"></i>Phone: <a href="tel:6318097898">(631)809-7898</a></div>
+            <div><i class="fa-brands fa-instagram"></i>Instagram: <a href="https://instagram.com/gonchirinka_photo">@gonchirinka_photo</a>
+        </div>
+        </div>
     </div>
-</div>
+</section>
 <p></p>
-    <div class="form">
-        <form action="#" id="form" class="form-body">
-        <div class="form-item">
-            <label for="formName" class="form-label">Name: </label>
-            <input id="formName" type="text" name="name" class="form-input _req _name">
-        </div>
-        <div class="form_item">
-            <label for="formEmail" class="form-label">Email/Instagram: </label>
-            <input id="formEmail" type="text" name="email" class="form-input _req _email">
-        </div>
-        <div class="form-item">
-            <label for="formMessage" class="form-label">Message: </label>
-            <textarea id="formMessage" name="message" class="form-input _req _message"></textarea>
-        </div>
-            <button type="submit" class="form-button">Send</button>
-        </form>
-    </div>
-<script src="js/contact.js"></script>
+<!--    <div class="form">-->
+<!--        <form action="#" id="form" class="form-body">-->
+<!--        <div class="form-item">-->
+<!--            <label for="formName" class="form-label">Name: </label>-->
+<!--            <input id="formName" type="text" name="name" class="form-input _req _name">-->
+<!--        </div>-->
+<!--        <div class="form_item">-->
+<!--            <label for="formEmail" class="form-label">Phone/Instagram/Email: </label>-->
+<!--            <input id="formEmail" type="text" name="email" class="form-input _req _email">-->
+<!--        </div>-->
+<!--        <div class="form-item">-->
+<!--            <label for="formMessage" class="form-label">Message: </label>-->
+<!--            <textarea id="formMessage" name="message" class="form-input _req _message"></textarea>-->
+<!--        </div>-->
+<!--            <button type="submit" class="form-button">Send</button>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--<script src="js/contact.js"></script>-->
+<script src="js/toggleButton.js"></script>
 </body>
 </html>

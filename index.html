@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-240953904-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-240953904-1');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="NYC Photographer - Irina Goncharenko"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://gonchirinka.com/"/>
+    <meta property="og:image" content="https://gonchirinka.com/img/irina_pic.jpg"/>
+    <meta property="og:local" content="en_US"/>
+    <meta property="og:description"
+          content="Hi there. My name is Irina. I'm a pthotorapher in New York City. I'll be happy to capture best moments of your life."/>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/scroll.css">
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <script src="https://kit.fontawesome.com/a0254a8c58.js" crossorigin="anonymous"></script>
-    <title>NYC Photographer</title>
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/>
+    <title>NYC Photographer - Irina Goncharenko</title>
 </head>
 <body>
 <nav class="navbar">
@@ -21,35 +40,29 @@
     <div class="navbar-links">
         <ul>
             <li class="hover-underline"><a href="index.html">Home</a></li>
-            <li class="hover-underline"><a href="#">About</a></li>
-            <li class="hover-underline"><a href="portfolio.html">Portfolio</a></li>
-            <li class="hover-underline"><a href="contact.html">Contact</a></li>
+            <li class="hover-underline"><a href="portfolio.html">Portfolio
+                <i class="fa-solid fa-camera"></i></a></li>
+            <li class="hover-underline"><a href="contact.html">Contact
+            </a></li>
         </ul>
     </div>
 </nav>
-<div class="spacer"></div>
-<div class="container">
-    <div class="grid">
-            <div class="grid-item"><img src="img/img1.JPG" alt=""></div>
-            <div class="grid-item"><img src="img/img2.JPG" alt=""></div>
-            <div class="grid-item"><img src="img/img3.JPG" alt=""></div>
-            <div class="grid-item"><img src="img/img4.JPG" alt=""></div>
-            <div class="grid-item"><img src="img/img5.JPG" alt=""></div>
-            <div class="grid-item"><img src="img/img6.JPG" alt=""></div>
-            <div class="grid-item"><img src="img/img7.JPG" alt=""></div>
-            <div class="grid-item"><img src="img/img8.JPG" alt=""></div>
-            <div class="grid-item"><img src="img/img9.JPG" alt=""></div>
-            <div class="grid-item"><img src="img/img10.JPG" alt=""></div>
-            <div class="grid-item"><img src="img/img11.JPG" alt=""></div>
-            <div class="grid-item"><img src="img/img12.JPG" alt=""></div>
-            <div class="grid-item"><img src="img/img13.JPG" alt=""></div>
+<main>
+    <div class="container">
+        <div class="grid">
+            <div class="grid-item "><img src="img/stories/img1.jpg" alt=""></div>
+            <div class="grid-item"><img src="img/stories/img7.jpg" alt=""></div>
+            <div class="grid-item"><img src="img/stories/img3.jpg"  alt=""></div>
+            <div class="grid-item"><img src="img/stories/img8.jpg" loading="lazy" alt=""></div>
+            <div class="grid-item"><img src="img/stories/img4.jpg" loading="lazy" alt=""></div>
+            <div class="grid-item"><img src="img/stories/img5.jpg" loading="lazy" alt=""></div>
+            <div class="grid-item"><img src="img/stories/img6.jpg" loading="lazy" alt=""></div>
+            <div class="grid-item"><img src="img/stories/img2.jpg" loading="lazy" alt=""></div>
+        </div>
     </div>
-</div>
+</main>
+
 <a class="gotopbtn" href="#"><i class="fa-solid fa-arrow-up"></i> </a>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-<script src="js/masonry.js"></script>
 <script src="js/toggleButton.js"></script>
-<script src="./js/contact.js"></script>
-<script src="js/imagesloaded.pkgd.js"></script>
 </body>
 </html>

@@ -1,0 +1,71 @@
+.content {
+    display: flex;
+    margin: 10px auto 0;
+    width: 700px;
+    flex-wrap: wrap;
+}
+
+.personal-logo {
+    margin: 0 auto;
+}
+
+.info {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: burlywood;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.book-now {
+    display: flex;
+    text-decoration: none;
+    color: burlywood;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    border: solid 1px burlywood;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 10px;
+    width: 140px;
+}
+
+.grid {
+    margin: 0 auto;
+}
+
+.grid-item {
+    width: 335px;
+}
+
+.grid-item img {
+    width: 100%;
+}
+
+.grid-item.width2 {
+    width: 675px;
+}
+
+@media screen and (max-width: 675px) {
+    .grid-item.width2 {
+        width: 335px;
+    }
+    .content {
+        width: 100%;
+    }
+}
